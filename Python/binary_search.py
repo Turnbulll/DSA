@@ -1,6 +1,6 @@
 from typing import List
 
-```
+"""
 BINARY SEARCH
 - Time complexity: O(log n)
 - Space complexity: O(1)
@@ -13,13 +13,13 @@ Instructions:
 5. If the middle element is less than the target, move the left pointer to mid + 1
 6. If the middle element is greater than the target, move the right pointer to mid - 1
 7. If the target is not found, return -1
-```
+"""
 
 def binary_search(arr: List[int], target:int) -> int:
     left = 0
     right = len(arr) - 1
 
-    while left <= right
+    while left <= right:
         mid = (left + right) // 2
         if arr[mid] == target:
             return mid
